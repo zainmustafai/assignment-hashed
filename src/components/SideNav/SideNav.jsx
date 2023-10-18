@@ -27,7 +27,7 @@ const SideNav = ({ dataPuller }) => {
                 </div>
                 {
                     menuItems.map((item) => {
-                        return <button className='flex items-center first:bg-light gap-6 py-[18px] pl-[24px] rounded-lg w-[300px] h-[70px] text-xl font-normal hover:bg-dark hover:text-white' key={item.title} >
+                        return <button className='flex items-center my-5 gap-6 py-[18px] pl-[24px] rounded-lg w-[300px] h-[70px] text-xl font-normal hover:bg-light hover:text-white' key={item.title} >
                             <span>
                             {item.icon}
                             </span>
