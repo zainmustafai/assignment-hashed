@@ -4,7 +4,7 @@ import MenicureIcon from './MenicureIcon.png'
 const ServiceCard = ({ iconImage, title, dateString }) => {
     return (
         <div
-            className='flex items-center justify-start gap-3 my-[20px]'
+            className='flex flex-wrap items-center justify-start gap-3 my-[20px]'
         >
             <div
                 className='relative rounded-md overflow-hidden w-[48px] aspect-square bg-[#FFEEF4]'>
