@@ -10,22 +10,14 @@ const Navbar = () => {
     return (
         <nav className='flex justify-between my-8'>
             {/* LEFT */}
-            <button
-                onClick={
-                    () => setShow(!show)
-                }
-                className='relative'
-            >
-
+            <button className='relative' onClick={() => setShow(!show)}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="37" height="31" viewBox="0 0 37 31" fill="none">
                     <rect width="36.5139" height="5.61752" fill="#101928" />
                     <rect y="12.6392" width="25.2788" height="5.61752" fill="#101928" />
                     <rect y="25.2788" width="36.5139" height="5.61752" fill="#101928" />
                 </svg>
             </button>
-            {
-                show && <SideNav dataPuller={dataPuller} />
-            }
+            {show && <SideNav dataPuller={dataPuller} />}
             {/* RIGHT */}
             <section className='flex items-center gap-x-8'>
                 <div className='flex items-center gap-4'>
@@ -71,15 +63,10 @@ const Navbar = () => {
                                 </clipPath>
                             </defs>
                         </svg>
-
                     </div>
-
-
                 </div>
             </section>
         </nav>
-
     )
 }
-
 export default Navbar

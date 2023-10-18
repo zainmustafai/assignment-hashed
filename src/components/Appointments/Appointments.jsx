@@ -13,15 +13,12 @@ const Appointments = () => {
                 <Calendar />
             </div>
             {/* APPOINTMENTS SIDE */}
-
             <div>
                 <h1 className="text-[#3F3F44] text-lg font-semibold mb-7 ">Today's Appointments</h1>
-                <List
-                    style={{
-                        maxHeight: 400,
-                        overflow: 'auto'
-                    }}
-                >
+                <List style={{
+                    maxHeight: 400,
+                    overflow: 'auto'
+                }}>
                     <AppointmentCard title={"Menicure"} iconImage={MenicureIcon} />
                     <AppointmentCard title={"Hair Dye"} iconImage={HairDyeIcon} />
                     <AppointmentCard title={"Menicure"} iconImage={MenicureIcon} />
